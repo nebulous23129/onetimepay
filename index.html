@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Time Pay - Gateway de Pagamentos Rápido e Seguro</title>
+    
+    <!-- Meta tags para SEO -->
+    <meta name="description" content="Aumente suas vendas com o checkout mais rápido e seguro do mercado. Taxas competitivas e integração simplificada.">
+    <meta name="keywords" content="gateway de pagamento, processamento de pagamentos, checkout online, pagamentos digitais">
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cinzel:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/privacy-popup.css">
+    <link rel="stylesheet" href="css/terms-popup.css">
+    
+    <!-- Bibliotecas de terceiros -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="images/logo.svg" alt="One Time Pay Logo" height="40">
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#funcionalidades">Funcionalidades</a></li>
+                    <li><a href="#integracao">Integração</a></li>
+                </ul>
+            </nav>
+            <button class="cta-button" onclick="openContactForm()">Começar Agora</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content" data-aos="fade-up">
+                    <h1>Aumente suas vendas com o checkout mais rápido e seguro do mercado</h1>
+                    <p>Ofereça aos seus clientes uma experiência de pagamento simplificada e sem complicações</p>
+                    <button class="cta-button-primary" onclick="openContactForm()">
+                        Experimente gratuitamente e veja a diferença!
+                    </button>
+                    <div class="social-proof">
+                        <span>Mais de 100 empresas confiam em nossa solução</span>
+                    </div>
+                </div>
+                <div class="hero-chart" data-aos="fade-left">
+                    <img src="images/grafico.png" alt="Gráfico de crescimento de vendas" class="floating-animation">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefícios Section -->
+    <section id="beneficios" class="benefits">
+        <div class="container">
+            <h2 data-aos="fade-up">Benefícios que impulsionam seu negócio</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="fade-up">
+                    <div class="icon">💰</div>
+                    <h3>Taxas Competitivas</h3>
+                    <p>Economize em cada transação com nossas taxas abaixo da média do mercado</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon">🔄</div>
+                    <h3>Integração Simplificada</h3>
+                    <p>Conecte-se facilmente às principais plataformas de e-commerce sem necessidade de programação</p>
+                </div>
+                <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon">🔒</div>
+                    <h3>Segurança de Ponta</h3>
+                    <p>Proteja os dados dos seus clientes com nossa certificação PCI DSS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="fade-up">
+                    <h3>40%</h3>
+                    <p>Redução no abandono de carrinho</p>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>50%</h3>
+                    <p>Redução no tempo de checkout</p>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>20%</h3>
+                    <p>Aumento na taxa de conversão</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vantagens Section -->
+    <section id="funcionalidades" class="advantages">
+        <div class="container">
+            <h2 class="section-title">Motivos que Tornam a One Time Pay Única</h2>
+            <div class="comparison-grid">
+                <div class="comparison-card negative">
+                    <h3>Com a concorrência</h3>
+                    <ul>
+                        <li><span class="icon">✕</span> Taxas elevadas</li>
+                        <li><span class="icon">✕</span> Cobranças adicionais</li>
+                        <li><span class="icon">✕</span> Suporte limitado</li>
+                        <li><span class="icon">✕</span> Pagamentos demorados</li>
+                        <li><span class="icon">✕</span> Baixa segurança</li>
+                        <li><span class="icon">✕</span> Integração complicada</li>
+                        <li><span class="icon">✕</span> Dificuldade na escala</li>
+                        <li><span class="icon">✕</span> Integração complicada</li>
+                        <li><span class="icon">✕</span> Falta de relatórios detalhados</li>
+                    </ul>
+                </div>
+                <div class="comparison-card positive">
+                    <h3>Com a One Time Pay</h3>
+                    <ul>
+                        <li><span class="icon">✓</span> Taxas competitivas</li>
+                        <li><span class="icon">✓</span> Zero cobranças extras</li>
+                        <li><span class="icon">✓</span> Saque na sua conta via Pix</li>
+                        <li><span class="icon">✓</span> Integração simplificada com plataformas</li>
+                        <li><span class="icon">✓</span> Estabilidade em picos de vendas</li>
+                        <li><span class="icon">✓</span> Escala sem limites</li>
+                        <li><span class="icon">✓</span> Análises em tempo real</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integração Section -->
+    <section id="integracao" class="integration">
+        <div class="container">
+            <h2 data-aos="fade-up">Comece a vender em minutos</h2>
+            <div class="steps-grid">
+                <div class="step" data-aos="fade-up">
+                    <div class="step-number">1</div>
+                    <h3>Crie sua conta</h3>
+                    <p>Processo simples em menos de 5 minutos</p>
+                </div>
+                <div class="step" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">2</div>
+                    <h3>Integre sua plataforma</h3>
+                    <p>Compatível com Shopify, WooCommerce, Magento e outras</p>
+                </div>
+                <div class="step" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">3</div>
+                    <h3>Comece a vender</h3>
+                    <p>Aceite pagamentos imediatamente</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2 data-aos="fade-up">Dúvidas Frequentes</h2>
+            <div class="faq-accordion">
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>Quais métodos de pagamento são suportados pela One Time Pay?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Oferecemos uma ampla gama de métodos de pagamento, incluindo cartões de crédito, débito, boleto bancário, PIX e muito mais.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>Como a One Time Pay garante a segurança das transações?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Utilizamos as mais avançadas tecnologias de criptografia e seguimos rigorosos padrões de segurança PCI DSS para proteger todas as transações.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>Quais são as taxas e custos associados ao uso da One Time Pay?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Oferecemos taxas competitivas e transparentes, sem custos ocultos. Entre em contato conosco para uma cotação personalizada.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>Como é o processo de integração da One Time Pay?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Nossa integração é simples e rápida, com documentação clara e suporte técnico dedicado durante todo o processo.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>Como vocês tratam disputas e chargebacks?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Temos uma equipe especializada que gerencia disputas e chargebacks, ajudando a proteger seu negócio e minimizar perdas.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>A One Time Pay impõe limites de processamento ou restrições de saque?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Não impomos limites fixos. Os limites são personalizados com base no perfil do seu negócio e volume de transações.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up">
+                    <button class="faq-question">
+                        <span>Como vocês garantem que não haverá bloqueios ou retenções nos saques?</span>
+                        <span class="icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Temos processos transparentes e automatizados que garantem a liberação dos seus recursos conforme o prazo acordado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <img src="images/logo2.svg" alt="One Time Pay Logo" height="40">
+                    <p>CNPJ: 58.399.597/0001-79</p>
+                    <p>AVENIDA PAULISTA, 1106</p>
+                    <p>BELA VISTA - SÃO PAULO/SP</p>
+                    <p>CEP: 01310-914</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="#" onclick="openPrivacyPolicy(); return false;">Política de Privacidade</a></li>
+                        <li><a href="#" onclick="openTermsOfUse(); return false;">Termos de Uso</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contato</h4>
+                    <p>Email: sac@onetimepayment.com.br</p>
+                    <p>Tel: (11) 4002-8922</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 One Time Pay. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Contato -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeContactForm()">&times;</span>
+            <h2>Solicitar Proposta</h2>
+            <h5>Preencha o formulário abaixo para solicitar uma proposta. Nossa equipe entrará em contato dentro de 48h.</h5><br>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="business-stage">Estágio do Negócio</label>
+                    <select id="business-stage" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="starting">Ainda não estou vendendo e quero começar</option>
+                        <option value="small">Faturo até R$ 10.000/mês</option>
+                        <option value="medium">Faturo entre R$ 10.000 e R$ 100.000/mês</option>
+                        <option value="large">Faturo entre R$ 100.000 e R$ 1.000.000/mês</option>
+                        <option value="enterprise">Faturo mais de R$ 1.000.000/mês</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefone</label>
+                    <input type="tel" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="document">CPF/CNPJ</label>
+                    <input type="text" id="document" required>
+                </div>
+                <div class="form-group">
+                    <label for="about">Conte mais sobre seu negócio</label>
+                    <textarea id="about" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="social">Site/Instagram (opcional)</label>
+                    <input type="text" id="social">
+                </div>
+                <button type="submit" class="submit-button">Solicitar Proposta</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Popup -->
+    <div id="privacyPopup" class="privacy-popup">
+        <div class="privacy-content">
+            <button class="close-privacy" onclick="closePrivacyPolicy()">×</button>
+            <h2>Política de Privacidade</h2>
+            
+            <p>Na One Time Pay, a privacidade dos nossos visitantes é de extrema importância para nós.</p>
+
+            <h3>Compromisso com a Privacidade</h3>
+            <p>Valorizamos a sua privacidade e garantimos que seus dados pessoais não serão vendidos, distribuídos ou compartilhados com terceiros, exceto quando necessário para cumprir ordens judiciais.</p>
+            <p>Toda informação pessoal referente a membros, assinantes, clientes ou visitantes que interagem com a One Time Pay será tratada conforme a Lei Geral de Proteção de Dados (LGPD) e a legislação aplicável.</p>
+
+            <h3>Segurança dos Dados</h3>
+            <p>Dados relacionados a pagamentos realizados em nossas plataformas não são armazenados em nossos servidores. As senhas são criptografadas e armazenadas de forma segura em nossos bancos de dados.</p>
+            <p>Informações enviadas por meio das nossas páginas de contato são usadas exclusivamente pela nossa equipe de suporte para fornecer assistência e não serão compartilhadas com terceiros.</p>
+            <p>Seu endereço de e-mail está protegido e não será compartilhado; abominamos o spam e garantimos a proteção total da sua privacidade.</p>
+
+            <h3>Registros</h3>
+            <p>Assim como muitos sites, coletamos e utilizamos informações de registros, como o endereço IP, ISP, navegador utilizado, horário da visita e páginas acessadas em nosso site.</p>
+            <p>Utilizamos o rastreamento de IPs para garantir serviços livres de spam e para oferecer segurança aos nossos clientes.</p>
+
+            <h3>Cookies e Tecnologias Semelhantes</h3>
+            <p>Empregamos cookies para armazenar informações como suas preferências pessoais durante sua navegação em nosso site. Isso pode incluir a exibição de pop-ups. Você tem a opção de desativar os cookies nas configurações do seu navegador ou ajustar as ferramentas de programas antivírus. Contudo, essa ação pode impactar a sua experiência de navegação e impedir o login em nosso site ou em outras plataformas.</p>
+            <p>Terceiros podem utilizar cookies, web beacons e tecnologias similares para coletar ou receber informações sobre seu uso de nosso site e de outros sites na internet, a fim de fornecer serviços de medição e publicidade direcionada.</p>
+
+            <h3>Links para Sites de Terceiros</h3>
+            <p>Nosso site pode conter links para outros sites que acreditamos ser úteis para nossos visitantes. A política de privacidade da One Time Pay não se aplica a sites de terceiros. Caso visite outro site a partir do nosso, recomendamos que você leia a política de privacidade desse site.</p>
+            <p>Não nos responsabilizamos pelas práticas de privacidade ou pelo conteúdo presente nesses sites.</p>
+
+            <h3>Contato</h3>
+            <p>Para questões relacionadas à privacidade, entre em contato conosco:</p>
+            <p>One Time Pay Produtos e Serviços Digitais LTDA<br>
+            CNPJ: 58.399.597/0001-79<br>
+            Avenida Paulista, 1106 - Sala 01<br>
+            Bela Vista - São Paulo/SP<br>
+            CEP: 01310-914<br>
+            Email: sac@onetimepayment.com.br<br>
+            Telefone: (11) 4002-8922</p>
+        </div>
+    </div>
+
+    <!-- Terms of Use Popup -->
+    <div id="termsPopup" class="terms-popup">
+        <div class="terms-content">
+            <button class="close-terms" onclick="closeTermsOfUse()">×</button>
+            <h2>Termos de Uso</h2>
+            
+            <p>Por meio deste documento, a pessoa física ou jurídica identificada no Cadastro ("ESTABELECIMENTO") e a One Time Pay Produtos e Serviços Digitais LTDA, ("One Time Pay"), CNPJ: 58.399.597/0001-79, com sede na Avenida Paulista, 1106 - Sala 01, Bela Vista - São Paulo/SP, CEP: 01310-914, estabelecem os seguintes Termos e Condições de Uso ("CONTRATO"):</p>
+
+            <h3>1. Objeto e Serviços</h3>
+            <p>Este Contrato tem como objetivo o credenciamento do ESTABELECIMENTO no Sistema One Time Pay, para a prestação dos seguintes serviços:</p>
+            <ul>
+                <li>Intermediação de pagamentos eletrônicos, incluindo captura, processamento e liquidação de transações</li>
+                <li>Aceitação de diversos meios de pagamento: cartão, boleto, PIX e outras modalidades disponíveis</li>
+                <li>Gestão de transações e relatórios financeiros</li>
+                <li>Suporte técnico especializado</li>
+            </ul>
+
+            <h3>2. Cadastro e Credenciamento</h3>
+            <p>Para utilizar nossos serviços, o ESTABELECIMENTO deve:</p>
+            <ul>
+                <li>Fornecer informações precisas e atualizadas no cadastro</li>
+                <li>Manter seus dados cadastrais sempre atualizados</li>
+                <li>Operar apenas nos segmentos informados no cadastro</li>
+                <li>Responder por todas as atividades realizadas em sua conta</li>
+            </ul>
+
+            <h3>3. Responsabilidades do Estabelecimento</h3>
+            <p>O ESTABELECIMENTO se compromete a:</p>
+            <ul>
+                <li>Cumprir todas as leis e regulamentos aplicáveis</li>
+                <li>Não realizar atividades ilegais ou proibidas</li>
+                <li>Manter a segurança de suas credenciais de acesso</li>
+                <li>Garantir a entrega dos produtos/serviços aos clientes</li>
+                <li>Responder por Chargebacks e contestações</li>
+            </ul>
+
+            <h3>4. Transações e Pagamentos</h3>
+            <p>Sobre as transações financeiras:</p>
+            <ul>
+                <li>Todas as transações devem ser em moeda nacional (Real)</li>
+                <li>Os recursos são mantidos em conta específica até a liquidação</li>
+                <li>Aplica-se Taxa de Desconto (MDR) sobre o valor bruto das transações</li>
+                <li>O prazo de liquidação pode variar conforme o meio de pagamento</li>
+            </ul>
+
+            <h3>5. Segurança e Privacidade</h3>
+            <p>A One Time Pay se compromete a:</p>
+            <ul>
+                <li>Proteger os dados das transações com criptografia</li>
+                <li>Manter a confidencialidade das informações do ESTABELECIMENTO</li>
+                <li>Seguir as normas de segurança PCI DSS</li>
+                <li>Cumprir a Lei Geral de Proteção de Dados (LGPD)</li>
+            </ul>
+
+            <h3>6. Propriedade Intelectual</h3>
+            <p>Todo o conteúdo e software disponibilizado são propriedade da One Time Pay ou licenciados para nós. É proibida a:</p>
+            <ul>
+                <li>Cópia ou modificação não autorizada do sistema</li>
+                <li>Engenharia reversa da plataforma</li>
+                <li>Criação de bancos de dados com nosso conteúdo</li>
+                <li>Uso de robôs ou sistemas automatizados</li>
+            </ul>
+
+            <h3>7. Modificações e Cancelamento</h3>
+            <p>A One Time Pay pode:</p>
+            <ul>
+                <li>Modificar estes termos mediante aviso prévio</li>
+                <li>Alterar taxas e tarifas com notificação prévia</li>
+                <li>Suspender ou cancelar serviços em caso de violação</li>
+                <li>Encerrar o contrato em casos de uso indevido</li>
+            </ul>
+
+            <h3>8. Disposições Gerais</h3>
+            <ul>
+                <li>Este contrato tem prazo indeterminado</li>
+                <li>As partes elegem o foro de São Paulo/SP para resolver disputas</li>
+                <li>O contrato pode ser assinado digitalmente</li>
+                <li>Comunicações oficiais serão feitas por e-mail cadastrado</li>
+            </ul>
+
+            <h3>9. Contato</h3>
+            <p>Para questões relacionadas aos termos de uso, entre em contato:</p>
+            <p>One Time Pay Produtos e Serviços Digitais LTDA<br>
+            CNPJ: 58.399.597/0001-79<br>
+            Avenida Paulista, 1106 - Sala 01<br>
+            Bela Vista - São Paulo/SP<br>
+            CEP: 01310-914<br>
+            Email: sac@onetimepayment.com.br<br>
+            Telefone: (11) 4002-8922</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/privacy-popup.js"></script>
+    <script src="js/terms-popup.js"></script>
+    <script>
+        // Inicializa as animações AOS
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+</body>
+</html>

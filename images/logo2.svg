@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="100" viewBox="0 0 400 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Importando a fonte Cinzel -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&amp;display=swap');
+    </style>
+    
+    <!-- Grupo para "One Time" -->
+    <text x="20" y="50" font-family="Cinzel" font-size="48" font-weight="700" fill="white">
+        One Time
+    </text>
+    
+    <!-- Grupo para "Pay" com background -->
+    <g transform="translate(230, 0)">
+        <!-- Background do "Pay" -->
+        <rect x="0" y="18" width="60" height="40" rx="6" fill="white"/>
+        
+        <!-- Texto "Pay" centralizado no background -->
+        <text x="30" y="44" font-family="Cinzel" font-size="24" font-weight="700" fill="#6366F1" text-anchor="middle">
+            Pay
+        </text>
+    </g>
+</svg>
